@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://x-up-lab.github.io/">
+    <title>Redirecting...</title>
+    <script>
+        (function() {
+            var newBase = "https://x-up-lab.github.io";
+            var newUrl = newBase + window.location.pathname + window.location.search;
+            window.location.replace(newUrl); // Uses replace() to avoid adding to browser history
+        })();
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a id="redirect-link" href="https://x-up-lab.github.io">click here</a>.</p>
+    <script>
+        document.getElementById("redirect-link").href = "https://x-up-lab.github.io" + window.location.pathname + window.location.search;
+    </script>
+</body>
+</html>
